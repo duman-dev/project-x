@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- İnternet izni bilinçli olarak yok. Bildirim yalnızca hatırlatıcılar için.
+         allowBackup kapalı: açıkken Android notları ve ayarları sormadan Google
+         Drive'a yedekliyor, eski sürümlerde de kablo ile kilidi aşarak çekilebiliyordu. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:name=".NotlarApp"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Notlar">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Simgeye uzun basınca: yeni not, bugünün notu, ara (Android 7.1+) -->
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/kisayollar" />
+        </activity>
+
+        <activity
+            android:name=".EditorActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".TrashActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".AyarlarActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".GorevlerActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".GecmisActivity"
+            android:parentActivityName=".EditorActivity" />
+
+        <activity
+            android:name=".KilitActivity"
+            android:excludeFromRecents="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".HatirlaticiAlicisi"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".WidgetAyarActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".HizliNotWidget"
+            android:exported="false"
+            android:label="@string/widget_hizli_not">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_hizli_not" />
+        </receiver>
+
+        <receiver
+            android:name=".TekNotWidget"
+            android:exported="false"
+            android:label="@string/widget_tek_not">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_tek_not" />
+        </receiver>
+
+        <receiver
+            android:name=".ListeWidget"
+            android:exported="false"
+            android:label="@string/widget_liste">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_liste" />
+        </receiver>
+
+        <service
+            android:name=".ListeWidgetServisi"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <!--
+          Dışarıdan gelen metin: "Paylaş", seçili metinde "Notlara ekle"
+          (Android 6+) ve .md/.txt dosyasını "Birlikte aç".
+        -->
+        <activity
+            android:name=".ShareActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:label="@string/notlara_ekle"
+            android:taskAffinity=""
+            android:theme="@style/Theme.Notlar.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:mimeType="text/markdown" />
+                <data android:mimeType="text/x-markdown" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+
+        <!-- Bildirim panelinde "Yeni not" döşemesi (Android 7+). -->
+        <service
+            android:name=".YeniNotDosemesi"
+            android:exported="true"
+            android:icon="@drawable/ic_duzenle"
+            android:label="@string/kisayol_yeni"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

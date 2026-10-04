@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="ara">Search</string>
+    <string name="yeni_not">New note</string>
+    <string name="bos_durum">No notes yet.\nTap the button below to write your first one.</string>
+    <string name="bos_baslik">No notes yet</string>
+    <string name="bos_aciklama">Tap + below to write your first one.</string>
+    <string name="bos_klasor_baslik">This folder is empty</string>
+    <string name="bos_klasor_aciklama">Notes you write while it\'s open are saved here.</string>
+    <string name="bos_arama_baslik">Nothing found for “%1$s”</string>
+    <string name="bos_arama_aciklama">Try a different word.</string>
+    <string name="bos_arama_klasorde">Only the “%1$s” folder was searched.</string>
+    <string name="bos_etiket_baslik">No notes tagged #%1$s</string>
+    <string name="bos_etiket_aciklama">Write #%1$s in a note and it shows up here.</string>
+    <string name="tum_notlarda_ara">Search all notes</string>
+    <string name="aramayi_temizle">Clear search</string>
+    <string name="araniyor">Searching…</string>
+    <string name="klasor_sec">Notes folder</string>
+    <string name="cop_kutusu">Trash</string>
+    <string name="tema">Theme</string>
+    <string name="sabitle">Pin</string>
+    <string name="sabit_kaldir">Unpin</string>
+    <string name="sil">Delete</string>
+    <string name="paylas">Share</string>
+    <string name="geri_yukle">Restore</string>
+    <string name="kalici_sil">Delete permanently</string>
+    <string name="not_kaydedildi">Note saved</string>
+    <string name="cope_tasindi">Moved to trash</string>
+    <string name="cop_bos">Trash is empty</string>
+    <string name="cop_bos_aciklama">Notes you delete land here, and you can bring them back.</string>
+    <string name="tema_sistem">Follow system</string>
+    <string name="tema_acik">Light</string>
+    <string name="tema_siyah">Pure black</string>
+    <string name="baslik_ipucu">Title</string>
+    <string name="notunu_yaz">Write your note here</string>
+    <string name="tumu">All</string>
+    <string name="yeni_klasor">New folder</string>
+    <string name="klasor_adi">Folder name</string>
+    <string name="olustur">Create</string>
+    <string name="iptal">Cancel</string>
+    <string name="ana_klasor">Main folder</string>
+    <string name="klasore_tasi">Move to folder</string>
+    <string name="tasindi">Moved</string>
+    <string name="geri">Back</string>
+    <string name="menu">Menu</string>
+    <string name="izin_yok_rozet">No internet permission</string>
+    <string name="bicim_baslik">Heading</string>
+    <string name="bicim_kalin">Bold</string>
+    <string name="bicim_italik">Italic</string>
+    <string name="bicim_liste">Bullet list</string>
+    <string name="bicim_onay">Checkbox</string>
+
+    <!-- Undo / redo -->
+    <string name="geri_al">Undo</string>
+    <string name="yinele">Redo</string>
+
+    <!-- Find and replace -->
+    <string name="bul_degistir">Find and replace</string>
+    <string name="bul">Find</string>
+    <string name="degistir">Replace</string>
+    <string name="tumu_degistir">All</string>
+    <string name="onceki">Previous</string>
+    <string name="sonraki">Next</string>
+    <string name="kapat">Close</string>
+    <string name="bulunamadi">No matches</string>
+    <plurals name="degistirildi">
+        <item quantity="one">Replaced in %d place</item>
+        <item quantity="other">Replaced in %d places</item>
+    </plurals>
+
+    <!-- Settings -->
+    <string name="ayarlar">Settings</string>
+    <string name="gorunum">Appearance</string>
+    <string name="vurgu_rengi">Accent color</string>
+    <string name="depolama">Storage</string>
+    <string name="yedekleme">Backup</string>
+    <string name="hakkinda">About</string>
+    <string name="surum">Version</string>
+    <string name="disa_aktar">Export as zip</string>
+    <string name="ice_aktar">Import from zip</string>
+    <string name="yedek_alindi">Backup saved</string>
+    <string name="yedek_hata">Couldn\'t finish that</string>
+    <string name="yedek_yarim">Part of the backup couldn\'t be read</string>
+    <string name="klasor_uygulama">App storage</string>
+    <string name="gizlilik_ozet">This app never connects to the internet. All your notes stay on your device.</string>
+
+    <!-- Colors -->
+    <string name="renk_amber">Amber</string>
+    <string name="renk_turuncu">Orange</string>
+    <string name="renk_kirmizi">Red</string>
+    <string name="renk_pembe">Pink</string>
+    <string name="renk_mor">Purple</string>
+    <string name="renk_mavi">Blue</string>
+    <string name="renk_deniz">Teal</string>
+    <string name="renk_yesil">Green</string>
+    <string name="renk_gri">Gray</string>
+
+    <!-- Sorting -->
+    <string name="siralama">Sort</string>
+    <string name="siralama_yeni">Recently edited first</string>
+    <string name="siralama_eski">Oldest edited first</string>
+    <string name="siralama_ad_az">By name (A-Z)</string>
+    <string name="siralama_ad_za">By name (Z-A)</string>
+
+    <!-- Folders -->
+    <string name="yeniden_adlandir">Rename</string>
+    <string name="klasoru_sil">Delete folder</string>
+    <string name="klasoru_sil_ozet">Notes inside will move to the main folder.</string>
+    <string name="klasor_silindi">Folder deleted</string>
+
+    <!-- Selection -->
+    <string name="secildi">%d selected</string>
+
+    <!-- Tasks -->
+    <string name="gorevler">Tasks</string>
+    <string name="gorev_yok">No open tasks</string>
+    <string name="gorev_yok_aciklama">Add a checkbox to any note and its items gather here.</string>
+    <string name="tamamlananlari_goster">Show completed</string>
+
+    <!-- Widgets -->
+    <string name="widget_hizli_not">Quick note</string>
+    <string name="widget_tek_not">Single note</string>
+    <string name="widget_liste">Note list</string>
+    <string name="widget_not_sec">Choose a note to show</string>
+    <string name="widget_bos">No notes</string>
+    <string name="okuma_gorunumu">Reading view</string>
+    <string name="duzenleme_gorunumu">Back to editing</string>
+    <string name="kaynak_modu">Source mode</string>
+    <string name="canli_onizleme">Live preview</string>
+    <string name="bicim_cizili">Strikethrough</string>
+    <string name="bicim_kod">Code</string>
+    <string name="bicim_alinti">Quote</string>
+    <string name="bicim_numarali">Numbered list</string>
+    <string name="girinti_arti">Increase indent</string>
+    <string name="girinti_eksi">Decrease indent</string>
+    <string name="not_islemleri">Note actions</string>
+    <string name="kilit_ac">Unlock</string>
+    <string name="pin_olustur">Create a PIN</string>
+    <string name="pin_tekrar">Enter the PIN again</string>
+    <string name="pin_kaldir">Remove PIN</string>
+    <string name="pin_yanlis">Wrong PIN</string>
+    <string name="pin_eslesmedi">PINs didn\'t match</string>
+    <string name="pin_4_hane">4-digit PIN</string>
+    <string name="pin_kullan">Use PIN</string>
+    <string name="parmak_izi">Unlock with fingerprint</string>
+    <string name="uygulama_kilidi">App lock</string>
+    <string name="kilit_acik">On</string>
+    <string name="kilit_kapali">Off</string>
+    <string name="guvenlik">Security</string>
+    <string name="ekran_gizle">Block screenshots</string>
+    <string name="ekran_gizle_ozet">Also hides recordings and the recent apps preview</string>
+    <string name="nota_kilit">Lock this note</string>
+    <string name="kilidi_kaldir">Unlock this note</string>
+    <string name="not_kilitlendi">Note locked</string>
+    <string name="not_kilidi_acildi">Note unlocked</string>
+    <string name="once_pin_kur">Set up app lock in settings first</string>
+    <string name="kilitli">Locked</string>
+    <string name="hatirlatici">Reminder</string>
+    <string name="hatirlaticilar">Reminders</string>
+    <string name="hatirlatici_kur">Set a reminder</string>
+    <string name="hatirlatici_kaldir">Remove reminder</string>
+    <string name="hatirlatici_kuruldu">Reminder set</string>
+    <string name="hatirlatici_kaldirildi">Reminder removed</string>
+    <string name="gecmis_zaman">That time has already passed</string>
+    <string name="etiketler">Tags</string>
+    <string name="etiket_yok">No tags yet</string>
+    <string name="geri_baglantilar">Linked from</string>
+    <string name="baglanti_yok">No links</string>
+    <string name="gecmis">Version history</string>
+    <string name="gecmis_yok">No versions yet</string>
+    <string name="gecmise_donuldu">Older version loaded</string>
+
+    <!-- Note lock -->
+    <string name="kilitli_not">Locked note</string>
+    <string name="kilitli_not_ozet">Enter your PIN to open this note</string>
+    <string name="not_kilit_ozet">A locked note hides its preview everywhere and asks for your PIN each time you open it. The .md file itself is not encrypted.</string>
+
+    <!-- App lock options -->
+    <string name="parmak_izi_soru">Also unlock with your fingerprint?</string>
+    <string name="parmak_izi_kullan">Use fingerprint too</string>
+    <string name="sadece_pin">PIN only</string>
+    <string name="otomatik_kilit">Auto-lock</string>
+    <string name="kilit_hemen">Immediately</string>
+    <string name="kilit_30sn">After 30 seconds</string>
+    <string name="kilit_1dk">After 1 minute</string>
+    <string name="kilit_5dk">After 5 minutes</string>
+
+    <!-- Version history -->
+    <string name="gecmis_karsilastir">Compare</string>
+    <string name="surume_don">Restore this version</string>
+    <string name="gecmis_fark_yok">Same as the current note</string>
+    <string name="gecmis_yok_ozet">No older versions yet.\nA version is kept every time the note is saved.</string>
+    <string name="gecmis_aciklama">If you go back to this version, green lines come back and crossed-out lines go away.</string>
+    <string name="gecmis_degisiklikler">Changes</string>
+    <string name="gecmis_tam_metin">Whole version</string>
+    <plurals name="fark_eklenen">
+        <item quantity="one">%d line comes back</item>
+        <item quantity="other">%d lines come back</item>
+    </plurals>
+    <plurals name="fark_silinen">
+        <item quantity="one">%d line goes away</item>
+        <item quantity="other">%d lines go away</item>
+    </plurals>
+    <plurals name="fark_degismeyen">
+        <item quantity="one">%d unchanged line</item>
+        <item quantity="other">%d unchanged lines</item>
+    </plurals>
+
+    <!-- Images -->
+    <string name="gorsel_ekle">Insert image</string>
+    <string name="gorsel_hata">Couldn\'t add that image</string>
+
+    <!-- Templates and daily note -->
+    <string name="bugunun_notu">Today\'s note</string>
+    <string name="sablondan_not">New note from template</string>
+    <string name="sablonlar">Templates</string>
+    <string name="ornek_sablonlar">Create starter templates</string>
+    <string name="sablon_olarak_kaydet">Save as template</string>
+    <string name="sablon_kaydedildi">Saved to templates</string>
+    <string name="sablon_hata">Couldn\'t do that</string>
+    <string name="sablon_gunluk">Daily note\n## Today\n-\u0020\n## Tasks\n- [ ]\u0020\n## Notes\n</string>
+    <string name="sablon_toplanti">{{date}} meeting\n## Present\n-\u0020\n## Discussed\n-\u0020\n## Decisions\n- [ ]\u0020\n</string>
+    <string name="sablon_alisveris">Shopping list {{date}}\n- [ ]\u0020\n- [ ]\u0020\n- [ ]\u0020\n</string>
+
+    <!-- Tags and image actions -->
+    <string name="etiket_ekle">Add a tag</string>
+    <string name="yeni_etiket">New tag</string>
+    <string name="ekle">Add</string>
+    <string name="gorsel">Image</string>
+    <string name="yukari_tasi">Move up</string>
+    <string name="asagi_tasi">Move down</string>
+    <string name="gorseli_kaldir">Remove from note</string>
+
+    <!-- v0.11.0 -->
+    <string name="duzenle">Edit</string>
+    <string name="kelime_karakter">%1$d words \u00b7 %2$d characters</string>
+    <string name="notu_cogalt">Duplicate note</string>
+    <string name="sablonlari_duzenle">Edit templates</string>
+    <string name="yazi_tipi">Font</string>
+    <string name="yazi_sistem">System</string>
+    <string name="yazi_serif">Serif</string>
+    <string name="yazi_mono">Monospace</string>
+    <string name="yazi_ince">Light</string>
+    <string name="yazi_dar">Condensed</string>
+    <string name="yazi_daktilo">Typewriter</string>
+    <string name="yazi_el">Handwriting</string>
+    <string name="yazi_kaligrafi">Calligraphy</string>
+    <string name="yazi_boyu">Text size</string>
+    <string name="boy_kucuk">Small</string>
+    <string name="boy_normal">Normal</string>
+    <string name="boy_buyuk">Large</string>
+    <string name="boy_cok_buyuk">Extra large</string>
+    <string name="sablon_haftalik">Weekly plan\n## Goals\n- [ ]\u0020\n## Monday\n-\u0020\n## Tuesday\n-\u0020\n## Wednesday\n-\u0020\n## Thursday\n-\u0020\n## Friday\n-\u0020\n## Weekend\n-\u0020\n</string>
+    <string name="sablon_kitap">Book notes\n**Author:**\u0020\n**Started:** {{date}}\n## Summary\n-\u0020\n## Quotes\n>\u0020\n## Thoughts\n-\u0020\n</string>
+    <string name="not_acilamadi">Couldn\'t open this note. It wasn\'t changed.</string>
+    <string name="kayit_hatasi">Couldn\'t save the note. Your text is kept and will be offered next time.</string>
+    <string name="taslak_bulundu">Unsaved changes were found from last time</string>
+    <string name="taslak_geri_yukle">Restore unsaved changes</string>
+    <string name="taslak_at">Discard them</string>
+    <string name="taslak_kurtarildi">An unsaved note was recovered</string>
+    <string name="klasor_kismen">Notes moved out. The folder still holds other files, so it was kept.</string>
+    <string name="keep_aktar">Import from Google Keep</string>
+    <string name="keep_aktar_ozet">Notes, lists, labels and photos</string>
+    <string name="keep_aciklama">1. Open takeout.google.com in a browser\n2. Click “Deselect all”, then tick only Keep\n3. Create the export and download the zip file\n4. Pick that zip here\n\nLabels become #tags, lists become checkboxes, archived notes go to an Archive folder. Importing the same zip again won\'t duplicate notes.</string>
+    <string name="keep_zip_sec">Pick the Takeout zip</string>
+    <string name="keep_aktariliyor">Importing from Keep… this can take a minute.</string>
+    <string name="keep_bulunamadi">No Keep notes in this file. Make sure you picked the Takeout zip.</string>
+    <string name="keep_arsiv_klasoru">Archive</string>
+    <plurals name="yedek_yuklendi">
+        <item quantity="one">%d note restored</item>
+        <item quantity="other">%d notes restored</item>
+    </plurals>
+    <plurals name="keep_not_sayisi">
+        <item quantity="one">%d note imported from Keep</item>
+        <item quantity="other">%d notes imported from Keep</item>
+    </plurals>
+    <plurals name="keep_gorsel_sayisi">
+        <item quantity="one">%d photo copied</item>
+        <item quantity="other">%d photos copied</item>
+    </plurals>
+    <plurals name="keep_zaten_vardi">
+        <item quantity="one">%d note was already imported, skipped</item>
+        <item quantity="other">%d notes were already imported, skipped</item>
+    </plurals>
+    <plurals name="keep_ek_atlandi">
+        <item quantity="one">%d audio recording can\'t be imported</item>
+        <item quantity="other">%d audio recordings can\'t be imported</item>
+    </plurals>
+    <string name="kisayol_yeni">New note</string>
+    <string name="kisayol_gunluk">Today\'s note</string>
+    <string name="kisayol_ara">Search notes</string>
+    <string name="notlara_ekle">Add to Notes</string>
+    <string name="yeni_not_olarak">Save as a new note</string>
+    <string name="bugunun_notuna_ekle">Add to today\'s note</string>
+    <string name="bugunun_notuna_eklendi">Added to today\'s note</string>
+    <string name="dosya_notlara_kopyala_soru">Copy “%1$s” into your notes?</string>
+    <string name="dosya_kopyala_ac">Copy and open</string>
+    <string name="vazgec">Cancel</string>
+    <string name="baglanti_ac">Open in browser</string>
+    <string name="baglanti_uygulama_yok">No app can open this link</string>
+    <string name="baglanti_kopyala">Copy link</string>
+    <string name="kopyalandi">Copied</string>
+    <string name="not_bagla">Link a note</string>
+    <string name="tarih_ekle">Insert date</string>
+    <string name="pin_bekle">Too many attempts. Try again in %d s</string>
+</resources>
